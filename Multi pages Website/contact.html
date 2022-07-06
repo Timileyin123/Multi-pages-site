@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"> <img src="./eduford_img/logo.png" alt=""></a>
+    <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hidemenu()" aria-hidden="true"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showmenu()" aria-hidden="true"></i>
+</nav>
+<h1>Contact Us</h1>
+</section>
+
+<!-- contact us content -->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3957.4319332073896!2d5.1344325644732205!3d7.305274394727567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d7.305237!2d5.133551199999999!4m5!1s0x1047894972021f41%3A0xd84c4e01abf1d646!2sFederal%20University%20of%20Technology%20Akure%2C%20Federal%20University%20Of%20Technology%2C%20Akure!3m2!1d7.307042!2d5.1397549!5e0!3m2!1sen!2sng!4v1653238365813!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>
+            <h5>Federal University of Technology,Akure</h5>
+            <p>Ondo State, Nigeria</p>
+            </span>
+            </div>
+        <div>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+            <h5>+234 7082413705</h5>
+            <p>Monday to Saturday, 5:30AM - 6:00PM</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <span>
+            <h5>info@futa.edu.ng</h5>
+            <p>Email us your query</p>
+            </span>
+        </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <div class="input-group"><input type="text" placeholder="Enter your name"required id="contact-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+                </div>
+               <div class="input-group" style="margin-top: -40px;"> <input type="email" placeholder="Enter email address" required > <br>
+                <span id="email-error"></span>
+                </div>
+                <div class="input-group" style="margin-top: -40px;"><input type="text" placeholder="Enter your subject" required>
+                <span id="subject-error"></span>
+            </div>
+                <div class="input-group" style="margin-top: -40px;"><textarea rows="8" placeholder="Message" required></textarea>
+                <span id="message-error"></span>
+                </div>
+                <button type="submit" class="visit-btn red-btn" style="margin-left: 15px;">Send Message</button>
+                <span id="submit-error"></span>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error similique<br>veritatis soluta voluptatem
+        maiores tenetur neque in voluptate eum.</p>
+    <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+    <p> Copyright 2022 &copy; College Website Design</p>
+</section>
+
+
+<!--- Javascript for Toogle Menu -->
+<script>
+var navlinks = document.getElementById("navlinks");
+
+function showmenu(){
+    navlinks.style.right = "0";
+}
+function hidemenu(){
+        navlinks.style.right = "-200px";
+}
+
+</script>
+
+
+</body>
+</html>  

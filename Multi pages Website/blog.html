@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"> <img src="./eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" aria-hidden="true"></i>
+        </nav>
+        <h1>Our Online Programs & Certificate</h1>
+
+        <!-- blog page content -->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+    <img src="./eduford_img/certificate.jpg" alt=""> 
+    <h2>Our Online Programs & Certificate</h2> 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, dicta similique, quaerat ducimus porro eveniet in est eaque veniam adipisci distinctio. Expedita, deserunt! Neque inventore quas autem eius expedita, velit fugit cum molestias, saepe incidunt quis enim aut magni. Repellat pariatur alias eos quam ipsum nobis minima! Dignissimos, alias harum?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur iste. In illum incidunt libero perferendis iure quam, beatae accusamus voluptatem tempore natus iusto a numquam optio harum, eum deleniti molestiae velit corporis impedit nihil? Illo laborum, dolorem reprehenderit deleniti fugit harum unde ipsam quidem recusandae a suscipit incidunt nostrum praesentium, illum soluta provident quam eum voluptate error nulla vel! Debitis a dolor libero harum possimus adipisci cupiditate similique tenetur, inventore delectus esse rerum totam quo animi veritatis ipsa aliquid quod sed voluptates? Adipisci provident, a dicta tempora voluptates aperiam quos explicabo eum fugiat quis! Neque consequuntur tempora et soluta non labore, voluptate illo sunt est pariatur libero dolorum ipsam deleniti repellat quibusdam quaerat quasi. Eum corrupti saepe doloremque neque.</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quasi pariatur esse illo expedita assumenda molestias iusto odit ipsa fugiat error, reprehenderit odio aliquam doloribus a, maxime modi numquam ad voluptates cum repellat repellendus illum consectetur. Reprehenderit quisquam iure doloribus similique quibusdam ullam nisi ea placeat harum fugit. Deleniti, error perspiciatis corporis quos aperiam laudantium voluptatum! Similique aspernatur mollitia hic, consequuntur assumenda a quisquam doloremque? Ut ex hic dolorem, praesentium ducimus possimus libero eveniet nulla magnam magni alias, asperiores illo, quibusdam voluptate minima culpa facere eius maxime! Veritatis corrupti repellendus commodi totam laudantium. Odit aliquid repellendus placeat possimus. Maxime, reprehenderit.</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, minus! Corrupti autem cumque enim quisquam et vero iusto ducimus beatae obcaecati! Numquam quidem pariatur repellat debitis laborum illo asperiores ducimus neque eligendi atque cupiditate odit tempore magnam, ipsam animi tenetur.</p>
+    <div class="comment-box" style="color: black;">
+        <h3>Leave A Comment</h3>
+        <form action="" class="comment-box">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" name="" id="" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your Comment"></textarea>
+            <button type="submit" class="visit-btn red-btn">POST COMMENT</button>
+        </form>
+    </div>
+                </div>
+                <div class="blog-right" style="color: black;">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Businesss Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error similique<br>veritatis soluta voluptatem
+            maiores tenetur neque in voluptate eum.</p>
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p> Copyright 2022 &copy; College Website Design</p>
+    </section>
+
+
+    <!--- Javascript for Toogle Menu -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
