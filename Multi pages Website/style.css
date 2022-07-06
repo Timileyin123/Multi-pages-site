@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
 .header {
   min-height: 100vh;
@@ -89,7 +90,7 @@ nav .fa {
     font-size: 30px;
   }
   .nav-links {
-    position: absolute;
+    position: fixed;
     background: #f44336;
     height: 100vh;
     width: 200px;
@@ -120,10 +121,13 @@ nav .fa {
     font-size: 24px;
   }
   .footer {
-    margin-top: 29em;
+    margin-top: 12em;
   }
-  .sub-header h1 {
-    color: black;
+   .sub-header h1 {
+    font-size: 24px;
+  } 
+  .sub-header img{
+    margin-top: 50px;
   }
   .header img {
     background-size: cover;
@@ -375,4 +379,116 @@ h4 {
 }
 .facilities {
   margin-top: -9em;
+}
+
+/* blog page content */
+.blog-content{
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+.blog-left{
+  flex-basis: 65%;
+}
+.blog-left img{
+  width: 100%;
+}
+.blog-left h2{
+  font-weight: 600;
+  margin: 30px 0;
+}
+.blog-left p{
+  padding: 0;
+}
+.blog-right{
+  flex-basis: 32%;
+}
+.blog-right h3{
+  background: #f44336;
+  color: #fff;
+  padding: 7px 0;
+  font-size:16px;
+  margin-bottom: 20px;
+}
+.blog-right div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.comment-box{
+  border: 1px solid #ccc;
+  margin: 50px;
+  padding:10px 20px;
+}
+.comment-box h3{
+  text-align: left;
+}
+.comment-box input, .comment-box textarea{
+  width:100%;
+ padding: 10px;
+ margin: 15px 0; 
+ box-sizing: border-box;
+  border: none;
+ outline: none;
+ background: #f0f0f0; 
+}
+.comment-box button{
+margin:10px 0;
+}
+
+/* Contact page */
+
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe{
+  width: 100%;
+}
+.contact-us{
+  width: 85%;
+  margin: auto;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div{
+  display:flex;
+  align-items:center;
+  margin-bottom: 40px;
+}.contact-col div .fa{
+  font-size: 28px;
+  color: #f44336;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div h5{
+font-size: 20px;
+margin-bottom: 5px;
+font-weight: 400;
+}
+.contact-col div p{
+  padding: 0;
+}
+.contact-col input, .contact-col textarea{
+width: 100%;
+margin: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+ .input-group span{
+position:absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: #f44336; 
+}
+#submit-error{
+color: #f44336;
 }
